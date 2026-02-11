@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "game_server" {
-  ami           = "ami-0317b0f0a0144b137" 
+  ami           = "ami-019715e0d74f695be" 
   instance_type = "t3.small"
   key_name      = "jenkins
 "
@@ -19,7 +19,7 @@ resource "aws_instance" "game_server" {
               EOF
 
   tags = {
-    Name = "Game-Server"
+    Name = "mygame"
   }
 }
 
